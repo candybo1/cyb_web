@@ -5,10 +5,80 @@
         <meta charset="utf-8" />
         <meta name="author" content="cyb">
         <title>秘闻：第二次巫师大战</title>
-	</head>
+
+<style type="text/css">
+.page{width:500; margin:0 auto;}
+.left{float:left; width:48%;height:600px;background-color: pink;}
+.right{float:right;width:48%;height:600px;}
+.header{font-size: 40px;text-align: center;}
+.footer{text-align: center;}
+ul{list-style:none;}
+		.imgBox{
+            border:solid cadetblue;
+            width: 300px;
+            height: 450px;
+            margin: 0 auto;
+
+       	}
+
+ 		.imgBox img{
+            width: 300px;
+            height: 450px;
+            margin: 0 auto;
+          /*  padding-top: 30px;*/
+        }
+
+        .img1{
+            display: block;
+        }
+
+        .img2{
+            display: none;
+        }
+
+        .img3{
+            display: none;
+        }
+</style>
+</head>
 
 <body>
-<h1 style="margin-bottom:0;text-align:center;">血与泪的第二次巫师大战</h1>
+<div class="page">
+    <div class="header">血与泪的第二次巫师大战</div>
+    <div class="main">
+    <div class="left"><h2>永远悼念</h2>
+
+	<div class="imgBox">
+    <img class="img-slide img1" src="./snp.jpg" alt="1">
+    <img class="img-slide img2" src="./luping.jpg" alt="2">
+    <img class="img-slide img3" src="./xtlx.jpg" alt="3">
+	</div>
+<script type="text/javascript">
+    var index=0;
+    //效果
+    function ChangeImg() {
+        index++;
+        var a=document.getElementsByClassName("img-slide");
+        if(index>=a.length) index=0;
+        for(var i=0;i<a.length;i++){
+            a[i].style.display='none';
+        }
+        a[index].style.display='block';
+    }
+    //设置定时器，每隔两秒切换一张图片
+    setInterval(ChangeImg,2000);
+</script>
+
+      </div>
+      <div class="right"><h2>逸闻</h2>
+      	<ul>
+      	<li>有待补充</li>
+      	</ul>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+    <div class="footer">铭记</div>
+</div>
 </body>
 
 </html>
